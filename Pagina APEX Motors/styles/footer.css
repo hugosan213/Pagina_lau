@@ -1,0 +1,31 @@
+footer {
+
+  padding: 48px 64px;
+
+  border-top: 1px solid rgba(201,168,76,0.1);
+
+}
+
+.footer-superior {
+
+  display: flex;
+
+  gap: 32px;
+
+}
+
+.footer-inferior {
+
+  display: flex;
+
+  justify-content: space-between;
+
+}
+
+.enlaces-footer {
+
+  display: flex;
+
+  gap: 24px;
+
+}

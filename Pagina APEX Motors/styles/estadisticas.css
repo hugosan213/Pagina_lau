@@ -1,0 +1,39 @@
+:root {
+    --oscuro-3: #1a1a1a;
+    --dorado: #d4af37;
+}
+
+.barra-estadisticas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background: var(--oscuro-3);
+    padding: 40px 60px;
+    border-radius: 12px;
+}
+
+.estadistica {
+    text-align: center;
+}
+
+.numero-estadistica {
+    display: block;
+    font-size: 56px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+}
+
+.sufijo {
+    display: block;
+    font-size: 28px;
+    color: var(--dorado);
+    margin-top: 8px;
+}
+
+.estadistica p {
+    color: #fff;
+    margin-top: 12px;
+    font-size: 18px;
+}

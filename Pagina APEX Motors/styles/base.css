@@ -1,0 +1,107 @@
+/* ─── VARIABLES ───────────────────── */
+
+:root {
+
+  --dorado:   #C9A84C;
+  --dorado-claro: #E8C97A;
+
+  --oscuro:   #090909;
+  --oscuro-2: #111111;
+  --oscuro-3: #1A1A1A;
+
+  --blanco:  #F4F1EC;
+  --gris:  #888880;
+
+}
+
+/* ─── RESET ───────────────────────── */
+
+*, *::before, *::after {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+
+  scroll-behavior: smooth;
+
+}
+
+body {
+
+  background: var(--oscuro);
+  color: var(--blanco);
+
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+
+  overflow-x: hidden;
+
+}
+
+/* ─── SECCIONES GENERALES ─────────── */
+
+section {
+
+  padding: 100px 64px;
+
+}
+
+.etiqueta-seccion {
+
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  color: var(--dorado);
+
+  margin-bottom: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+}
+
+.etiqueta-seccion::before {
+
+  content: '';
+  width: 28px;
+  height: 1px;
+
+  background: var(--dorado);
+
+}
+
+.titulo-seccion {
+
+  font-family: 'Bebas Neue', sans-serif;
+
+  font-size: clamp(40px, 5.5vw, 68px);
+
+  letter-spacing: 2px;
+
+  line-height: 1;
+
+  margin-bottom: 48px;
+
+}
+
+/* ─── ANIMACIONES ───────────────── */
+
+@keyframes aparecerArriba {
+
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}

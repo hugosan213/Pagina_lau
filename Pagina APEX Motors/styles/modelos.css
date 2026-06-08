@@ -1,0 +1,78 @@
+#modelos {
+
+  background: var(--oscuro-2);
+
+}
+
+.grilla-autos {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 2px;
+
+}
+
+.tarjeta-auto {
+
+  background: var(--oscuro-3);
+
+  overflow: hidden;
+
+  transition: transform 0.4s;
+
+}
+
+.tarjeta-auto:hover {
+
+  transform: translateY(-6px);
+
+}
+
+.imagen-auto {
+
+  padding: 32px 20px 20px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+.info-auto {
+
+  padding: 24px;
+
+}
+
+.precio-auto {
+
+  color: var(--gris);
+
+}
+
+.enlace-auto {
+
+  color: var(--dorado);
+
+  text-decoration: none;
+
+}
+
+.imagen-auto {
+  height: 220px; /* mismo alto para todas */
+  padding: 32px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-auto img {
+  width: 100%;
+  max-width: 320px;
+  height: 180px; /* mismo alto para todas */
+  object-fit: contain; /* mantiene proporciones sin deformar */
+  display: block;
+}

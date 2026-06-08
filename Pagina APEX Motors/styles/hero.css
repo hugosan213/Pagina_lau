@@ -1,0 +1,179 @@
+/* ─── HERO ───────────────────────────── */
+
+#hero {
+
+  height: 100vh;
+  min-height: 600px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 64px;
+
+  background:
+    radial-gradient(
+      ellipse 60% 70%
+      at 80% 50%,
+      rgba(201,168,76,0.06),
+      transparent
+    ),
+    var(--oscuro);
+
+}
+
+/* CONTENIDO */
+
+.contenido-hero {
+
+  max-width: 600px;
+
+}
+
+/* TEXTO SUPERIOR */
+
+.etiqueta {
+
+  font-size: 11px;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+
+  color: var(--dorado);
+
+  margin-bottom: 20px;
+
+  opacity: 0;
+
+  animation:
+    aparecerArriba
+    0.7s ease
+    0.2s forwards;
+
+}
+
+/* TITULO */
+
+.contenido-hero h1 {
+
+  font-family: 'Bebas Neue', sans-serif;
+
+  font-size: clamp(70px, 11vw, 140px);
+
+  line-height: 0.9;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 24px;
+
+  opacity: 0;
+
+  animation:
+    aparecerArriba
+    0.7s ease
+    0.4s forwards;
+
+}
+
+/* DESCRIPCION */
+
+.descripcion-hero {
+
+  font-size: 16px;
+
+  color: var(--gris);
+
+  line-height: 1.7;
+
+  max-width: 400px;
+
+  margin-bottom: 40px;
+
+  opacity: 0;
+
+  animation:
+    aparecerArriba
+    0.7s ease
+    0.6s forwards;
+
+}
+
+/* BOTONES */
+
+.acciones-hero {
+
+  display: flex;
+
+  gap: 20px;
+
+  align-items: center;
+
+  opacity: 0;
+
+  animation:
+    aparecerArriba
+    0.7s ease
+    0.8s forwards;
+
+}
+
+/* BOTON PRINCIPAL */
+
+.boton-principal {
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  background: var(--dorado);
+
+  color: var(--oscuro);
+
+  padding: 15px 36px;
+
+  text-decoration: none;
+
+  font-weight: 500;
+
+  transition:
+    background 0.25s,
+    transform 0.2s;
+
+  display: inline-block;
+
+}
+
+.boton-principal:hover {
+
+  background: var(--dorado-claro);
+
+  transform: translateY(-2px);
+
+}
+
+/* BOTON SECUNDARIO */
+
+.boton-secundario {
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: var(--gris);
+
+  text-decoration: none;
+
+  transition: color 0.25s;
+
+}
+
+.boton-secundario:hover {
+
+  color: var(--blanco);
+
+}

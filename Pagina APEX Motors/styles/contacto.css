@@ -1,0 +1,122 @@
+#contacto {
+  background: var(--oscuro-2);
+  padding: 100px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.intro-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.descripcion-contacto {
+  color: var(--gris);
+  line-height: 1.7;
+}
+
+.info-contacto {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-contacto p {
+  color: var(--blanco);
+  font-size: 15px;
+}
+
+.formulario-contacto {
+  background: var(--oscuro-3);
+  padding: 40px;
+  border-radius: 18px;
+  border: 1px solid rgba(201,168,76,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fila-formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.grupo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grupo-formulario label {
+  color: var(--blanco);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea,
+.grupo-formulario select {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(201,168,76,0.15);
+  background: var(--oscuro-2);
+  color: var(--blanco);
+  outline: none;
+  font-size: 15px;
+  font-family: inherit;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario textarea:focus,
+.grupo-formulario select:focus {
+  border-color: var(--dorado);
+  box-shadow: 0 0 0 3px rgba(201,168,76,0.15);
+}
+
+.grupo-formulario textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.boton-enviar {
+  margin-top: 10px;
+  background: var(--dorado);
+  color: var(--oscuro);
+  border: none;
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.boton-enviar:hover {
+  transform: translateY(-3px);
+  opacity: 0.95;
+}
+
+@media (max-width: 900px) {
+
+  #contacto {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .fila-formulario {
+    grid-template-columns: 1fr;
+  }
+
+  .formulario-contacto {
+    padding: 25px;
+  }
+
+}

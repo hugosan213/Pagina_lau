@@ -1,0 +1,98 @@
+<section id="contacto">
+
+  <div class="intro-contacto">
+
+    <p class="etiqueta-seccion">
+      Contacto
+    </p>
+
+    <h2 class="titulo-seccion">
+      HABLEMOS DE TU PRÓXIMO AUTO
+    </h2>
+
+    <p class="descripcion-contacto">
+      Nuestro equipo está disponible para ayudarte a encontrar el vehículo
+      perfecto para vos. Completá el formulario y nos pondremos en contacto.
+    </p>
+
+    <div class="info-contacto">
+      <p>📍 Av. del Libertador 4800, Palermo</p>
+      <p>📞 +54 11 4800 0000</p>
+      <p>✉️ info@apexmotors.com.ar</p>
+      <p>🕐 Lun–Sáb · 9:00 a 19:00</p>
+    </div>
+
+  </div>
+
+  <form class="formulario-contacto" onsubmit="manejarEnvio(event)">
+
+    <div class="fila-formulario">
+
+      <div class="grupo-formulario">
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Juan García"
+          required>
+      </div>
+
+      <div class="grupo-formulario">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="juan@email.com"
+          required>
+      </div>
+
+    </div>
+
+    <div class="grupo-formulario">
+
+      <label for="marca">
+        Marca de interés
+      </label>
+
+      <select id="marca" name="marca">
+
+        <option value="">
+          Seleccionar...
+        </option>
+
+        <option>Porsche</option>
+        <option>BMW</option>
+        <option>Mercedes-Benz</option>
+
+      </select>
+
+    </div>
+
+    <div class="grupo-formulario">
+
+      <label for="mensaje">
+        Mensaje
+      </label>
+
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        rows="5"
+        placeholder="¿Qué vehículo estás buscando?">
+      </textarea>
+
+    </div>
+
+    <button
+      type="submit"
+      class="boton-enviar">
+
+      Enviar consulta
+
+    </button>
+
+  </form>
+
+</section>

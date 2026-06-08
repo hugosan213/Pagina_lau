@@ -1,0 +1,92 @@
+#barra-navegacion {
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 100;
+
+  padding: 24px 64px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  transition: background 0.4s, padding 0.4s;
+
+}
+
+#barra-navegacion.desplazado {
+
+  background: rgba(9,9,9,0.96);
+
+  padding: 16px 64px;
+
+  border-bottom: 1px solid rgba(201,168,76,0.12);
+
+}
+
+.logo {
+
+  font-family: 'Bebas Neue', sans-serif;
+
+  font-size: 26px;
+
+  letter-spacing: 5px;
+
+  color: var(--blanco);
+
+  text-decoration: none;
+
+}
+
+.logo span {
+
+  color: var(--dorado);
+
+}
+
+.enlaces-nav {
+
+  display: flex;
+
+  gap: 36px;
+
+  list-style: none;
+
+}
+
+.enlaces-nav a {
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: var(--gris);
+
+  text-decoration: none;
+
+}
+
+.boton-nav {
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: var(--dorado);
+
+  border: 1px solid var(--dorado);
+
+  padding: 10px 22px;
+
+  text-decoration: none;
+
+}
