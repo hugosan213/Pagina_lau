@@ -96,12 +96,15 @@
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-.boton-enviar:hover {
+.boton-enviar:hover,
+.boton-enviar:focus {
+  background: #ffdc46;
+  color: #000;
   transform: translateY(-3px);
-  opacity: 0.95;
+  box-shadow: 0 12px 30px rgba(255, 220, 70, 0.25);
 }
 
 @media (max-width: 900px) {

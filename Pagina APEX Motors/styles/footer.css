@@ -29,3 +29,14 @@ footer {
   gap: 24px;
 
 }
+
+.enlaces-footer a {
+  color: var(--dorado);
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.enlaces-footer a:hover,
+.enlaces-footer a:focus {
+  color: #ffdc46;
+}

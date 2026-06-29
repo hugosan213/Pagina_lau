@@ -72,3 +72,26 @@ const observadorEstadisticas =
     { threshold: 0.4 }
 
   );
+
+function iniciarContadores() {
+
+  document
+    .querySelectorAll(".estadistica")
+    .forEach((estadistica) => {
+
+      if (estadistica.dataset.contadorObservado === "true")
+        return;
+
+      estadistica.dataset.contadorObservado = "true";
+      observadorEstadisticas.observe(estadistica);
+
+    });
+
+}
+
+window.inicializarContadores = iniciarContadores;
+
+document.addEventListener(
+  "DOMContentLoaded",
+  iniciarContadores
+);

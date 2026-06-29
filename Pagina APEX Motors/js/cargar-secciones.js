@@ -12,6 +12,9 @@ function cargarSeccion(id, archivo) {
         .getElementById(id)
         .innerHTML = datos;
 
+      if (typeof window.inicializarContadores === "function")
+        window.inicializarContadores();
+
     });
 
 }
